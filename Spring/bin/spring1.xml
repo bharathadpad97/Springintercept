@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        
+        
+  <beans>
+  
+    <bean id="circle"  class="com.bharat.amity.Circle">
+  
+	<!-- <constructor-arg value="Full circle"/>
+	<constructor-arg value="56"/>  -->
+
+<constructor-arg type="int" value="56"/>
+<constructor-arg type="String" value="Half circle"/>
+
+ <!--  <constructor-arg index="0" value ="fullcircle"/>
+  <constructor-arg index="1" value="78"/>
+ -->
+  </bean>
+  
+  </beans>
+  
+  
+  
+   <!--  <property name="type" value="HalfCircle"/> -->

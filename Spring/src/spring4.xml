@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+<bean id="parenttriangle"  class="com.bharat3.amity.Triangle1">
+<property name="pointA"  ref="pointA"/>
+
+</bean>
+
+<bean id="triangle2"   class="com.bharat3.amity.Triangle1" parent="parenttriangle">
+
+<property name="pointC"  ref="pointC"/>
+</bean>
+
+<bean id="triangle1"   class="com.bharat3.amity.Triangle1" parent="parenttriangle">
+<property name="pointB"  ref="pointB"/>
+<property name="pointC"  ref="pointC"/>
+</bean>
+
+
+
+<bean id="triangle3"   class="com.bharat3.amity.Triangle1" parent="parenttriangle">
+
+<property name="pointB"  ref="pointB"/>
+</bean>
+
+
+
+
+<bean id="pointA"  class="com.bharat3.amity.Point1">
+<property name="x"  value="10"/>
+<property name="y"  value="57"/>
+</bean>
+
+
+<bean id="pointB" class="com.bharat3.amity.Point1">
+<property name="x"  value="10"/>
+<property name="y"  value="20"/>
+</bean>
+
+
+<bean id="pointC"  class="com.bharat3.amity.Point1">
+<property name="x"  value="2"/>
+<property name="y"  value="4"/>
+</bean>
+
+
+
+</beans>

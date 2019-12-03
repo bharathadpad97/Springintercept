@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+     
+ 
+ <bean id="Reactangle"  class="com.bharat4.amity.Rectangle">
+ <property name="trianglepoint" ref="points"/>
+ </bean>
+ 
+<!--  <bean id="Square"  class="com.bharat4.amity.Square">
+ <property name="squarepoint" ref="points"/>
+ </bean>
+  -->
+ 
+ 
+ <bean id="points" class="com.bharat4.amity.Points">
+ <property name="length"  value="29"/>
+ <property name="breadth" value="87"/>
+ </bean>
+ 
+ <bean id="Square"  class="com.bharat4.amity.Square">
+
+ </bean>
+ 
+ <bean id="squarevalues" class="com.bharat4.amity.Points">
+ 
+<!--  <qualifier value="bharat"/> -->
+ <property name="length"  value="23"/>
+ 
+ <property name="breadth" value="55"/>
+ </bean>
+ 
+ <!--  --><bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+ 
+ <context:annotation-config></context:annotation-config>
+ 
+ <context:component-scan base-package="com.bharat4.amity"/>
+ </beans>
+ 
+ 
+ 

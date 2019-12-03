@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<bean id="trianglee"   class="com.bharat2.amity.Trianglee">
+
+<property name="points">
+<list>
+
+
+	
+<bean class="com.bharat2.amity.Pointer">
+<property name="x"  value="0"/>
+<property name="y"  value="0"/>
+</bean>
+	
+	
+	
+
+<bean class="com.bharat2.amity.Pointer">
+<property name="x"  value="10"/>
+<property name="y"  value="57"/>
+</bean>
+
+
+
+<bean class="com.bharat2.amity.Pointer">
+<property name="x"  value="10"/>
+<property name="y"  value="20"/>
+</bean>
+
+	
+		
+</list>
+</property>
+
+
+
+
+</bean>
+
+
+
+
+
+</beans>
