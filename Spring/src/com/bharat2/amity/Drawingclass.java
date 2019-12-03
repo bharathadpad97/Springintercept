@@ -12,7 +12,7 @@ public class Drawingclass {
 		Trianglee t1=(Trianglee)a1.getBean("trianglee");
 		
 		t1.draw();
-		
+		t1.draw();
 
 	}
 
