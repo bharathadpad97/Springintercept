@@ -14,7 +14,7 @@ public class Drawing1 {
 		
 		t1.draw();
 		
-		System.out.println("edited by bharathadpad97");
+		System.out.println("edited by bharathadpad97 now");
 	}
 
 }
