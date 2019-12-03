@@ -13,6 +13,8 @@ public class Drawing1 {
 		Triangle t1=(Triangle)a1.getBean("triangle");
 		
 		t1.draw();
+		
+		
 	}
 
 }
