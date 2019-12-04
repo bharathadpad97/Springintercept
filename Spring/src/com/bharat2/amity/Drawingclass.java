@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Drawingclass {
+	int a=10;
 
 	public static void main(String[] args) 
 	{
